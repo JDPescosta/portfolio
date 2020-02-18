@@ -2,41 +2,73 @@
 
 .landing-container {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  align-content:  flex-start;
+  align-content: center;
+  height: 97.5vh;
+ 
   
-  height: 75vh;
-  margin: 0 auto;
-  padding-top: 20vh;
 
-  img {
-    max-width: 350px;
-    min-width: 250px;
+  .landing-row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    align-content: flex-start;
+
+    .profile-img {
+      padding: 5px;
+      max-width: 350px;
+      min-width: 150px;
+    }
+
+    .heading-card {
+      box-shadow: 0px 3px 6px #00000029;
+      margin-left: -3.5%;
+      margin-top: -3.5%;
+      background-color: white;
+      z-index: 1;
+      padding: 32px;
+      h1 {
+        font-family: $heading-font;
+        font-size: 3.5rem;
+        margin: 0;
+      }
+      h3 {
+        font-family: $body-font;
+        font-size: 1rem;
+        font-weight: 400;
+        color: #4a4747;
+        margin: 0;
+      }
+    }
   }
-  
 
-  .heading-card {
-    box-shadow: 0px 3px 6px #00000029;
-    margin-left: -3.5%;
-    margin-top: -3.5%;
+  .down-button {
+    border-radius: 100%;
     background-color: white;
-    z-index: 1;
-    padding: 32px;
-    h1 {
-      font-family: $heading-font;
-      font-size: 3.5rem;
-      margin: 0;
+    box-shadow: 0px 3px 6px #00000029;
+    border: 0;
+    position: absolute;
+    bottom: 0.75vh;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+
+    img {
+      padding-top: 1px;
+      width: 100%;
+      height: 100%;
     }
-    h3 {
-      font-family: $body-font;
-      font-size: 1rem;
-      font-weight: 400;
-      color: #4A4747;
-      margin: 0;
-    }
+  }
+  .down-button:focus{
+    outline: 0;
   }
 }
 
@@ -50,19 +82,20 @@
   background-color: $primary-color;
   padding: 64px 0;
 
+  .link-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+
   .about-card {
     margin: 10px;
     padding: 28px;
     width: 25%;
     min-width: 250px;
-    height: 30vh;
-
-    .link-card {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
+    min-height: 275px;
 
     h2 {
       font-family: $heading-font;
@@ -74,6 +107,22 @@
       font-family: $body-font;
       font-size: 16px;
       margin: 0;
+    }
+  }
+}
+@media screen and (max-width: 420px) {
+  .landing-container {
+    padding-top: 0;
+
+    .heading-card {
+      
+      margin-top: -2%;
+    }
+  }
+
+  .about-container {
+    .link-card {
+      flex-direction: row;
     }
   }
 }
