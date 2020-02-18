@@ -3,7 +3,13 @@ import PropTypes from 'prop-types';
 import './SocialLink.scss';
 
 const SocialLink = ({ imageSrc, altText, link, isDownload }) => (
-  <a className="social-link" href={link} download={isDownload}>
+  <a
+    className="social-link"
+    href={link}
+    download={isDownload}
+    target="_blank"
+    rel="noopener noreferrer"
+  >
     <img src={imageSrc} alt={altText} />
   </a>
 );
