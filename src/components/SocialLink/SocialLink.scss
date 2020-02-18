@@ -1,0 +1,20 @@
+@import '../../App.scss';
+
+.social-link {
+    display: flex;
+    background-color: $primary-color;
+    
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    margin: 5px 5px;
+    padding: 8.5px;
+    max-width: 65px;
+    max-height: 65px;
+    
+
+    img {
+        max-width: 99%;
+        max-height: 99%;
+    }
+}
