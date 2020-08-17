@@ -1,0 +1,66 @@
+@import '../../App.scss';
+
+.project-tile {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  box-shadow: 0px 3px 6px #00000029;
+  background-color: white;
+  border: 15px solid $primary-color;
+  padding: 1%;
+  margin: 40px;
+  text-align: center;
+
+  img {
+    top: 0;
+    height: 400px;
+    width: 300px;
+    margin: 18px;
+    object-fit: cover;
+  }
+
+  h3 {
+    font-size: 26px;
+    font-family: $heading-font;
+    color: $primary-color;
+    margin: 0;
+  }
+  p {
+    margin: 0;
+    font-size: 14px;
+    font-family: $body-font;
+  }
+  h4 {
+    font-size: 16px;
+    font-family: $body-font;
+    font-weight: 400;
+    margin: 5px 0 5px 0;
+  }
+  div {
+    height: 100%;
+    width: 100%;
+    margin: 26px;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    a {
+      width: 47.5%;
+      height: 45px;
+      color: white;
+      font-family: $heading-font;
+      font-size: 20px;
+      text-decoration: none;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      background: $primary-color 0% 0% no-repeat padding-box;
+      border-radius: 5px;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  }
+}

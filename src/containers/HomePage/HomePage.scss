@@ -7,8 +7,6 @@
   justify-content: center;
   align-content: center;
   height: 97.5vh;
- 
-  
 
   .landing-row {
     width: 100%;
@@ -67,7 +65,7 @@
       height: 100%;
     }
   }
-  .down-button:focus{
+  .down-button:focus {
     outline: 0;
   }
 }
@@ -110,12 +108,44 @@
     }
   }
 }
+
+.project-container {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  padding: 64px 0;
+
+  .projects-title {
+    font-family: $heading-font;
+    font-size: 3.4rem;
+    margin: 0;
+    text-align: center;
+  }
+
+  .project-row {
+    width: 95vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+
+    .project-tile {
+      width: 25%;
+      min-width: 300px;
+      min-height: 350px;
+    }
+  }
+}
+
 @media screen and (max-width: 420px) {
   .landing-container {
     padding-top: 0;
 
     .heading-card {
-      
       margin-top: -2%;
     }
   }
