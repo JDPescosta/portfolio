@@ -24,7 +24,7 @@ const socialInfo = [
   {
     image: cvPic,
     alt: 'CV Icon',
-    link: '/JamesPescosta_Resume.pdf',
+    link: 'https://jdp-portfolio.s3-us-west-2.amazonaws.com/Dev_Online_JamesResume.pdf',
     isDownload: true,
   },
 ];
