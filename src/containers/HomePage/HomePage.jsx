@@ -14,7 +14,7 @@ const socialInfo = [
   {
     image: linkedinPic,
     alt: 'LinkedIn Icon',
-    link: 'https://ca.linkedin.com/in/james-pescosta-58180116b',
+    link: 'www.linkedin.com/in/james-pescosta',
   },
   {
     image: githubPic,
@@ -30,6 +30,14 @@ const socialInfo = [
 ];
 
 const projectInfo = [
+  {
+    image: 'https://jdp-portfolio.s3-us-west-2.amazonaws.com/otoImg.jpeg',
+    className: 'project-tile',
+    linkAddress: 'https://otonomos.com/',
+    projectName: 'Otonomos website',
+    description: 'Business incorporation site',
+    builtWith: ' React & AWS',
+  },
   {
     image:
       'https://pointbuy-calc.s3-us-west-2.amazonaws.com/race-images/rockgnome.png',
@@ -74,7 +82,7 @@ const HomePage = () => {
 
           <Card className="heading-card">
             <h1>Hi I'm James,</h1>
-            <h3>A rookie developer with experience in web and games.</h3>
+            <h3>A full-stack developer with experience in web and games.</h3>
           </Card>
         </div>
 
@@ -90,14 +98,15 @@ const HomePage = () => {
         <Card className="about-card">
           <h2>WHO I AM</h2>
           <p>
-            I'm an Australian developer who recently moved to Vancouver after
-            honeymooning with my new wife. While it's a tad bit colder here, I
-            find myself warming up to the Canadian lifestyle.
+            I'm an Australian developer who moved to Vancouver Island with my
+            wife and baby daughter. I was told it never snows here and it has
+            snowed every year since we moved.
           </p>
           <br />
           <p>
-            I spend most of my time coding, playing D&D and walking my dog. I'm
-            a huge nerd!
+            I spend most of my time with my Wife, daughter and two dogs. In my
+            (rare) free time, I like to code, play D&D, read Brandon Sanderson
+            novels and walk my dogs.
           </p>
         </Card>
         <Card className="about-card link-card">
@@ -121,8 +130,8 @@ const HomePage = () => {
           </p>
           <br />
           <p>
-            Now that I've moved to Canada, I'm looking to get back into the
-            development side of software.{' '}
+            After moving to Canada, I started at a full-stack web dev position
+            and I found that I really enjoy development side of software.{' '}
           </p>
         </Card>
       </div>

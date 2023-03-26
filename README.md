@@ -9,4 +9,5 @@ This is just my portfolio made in React and hosted on AWS. Checkout the LIVE ver
 Thank you for your time.
 
 Kind regards,
+
 James Pescosta

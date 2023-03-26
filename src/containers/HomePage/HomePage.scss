@@ -93,7 +93,8 @@
     padding: 28px;
     width: 25%;
     min-width: 250px;
-    min-height: 275px;
+    min-height: 300px;
+    max-height: 300px;
 
     h2 {
       font-family: $heading-font;
