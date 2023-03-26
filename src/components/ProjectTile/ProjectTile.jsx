@@ -13,19 +13,40 @@ const ProjectTile = ({
 }) => (
   <div className={`project-tile ${className}`}>
     <img src={image} alt={`A screenshot of the ${projectName} app.`} />
-    <h3>{projectName}</h3>
-    <p>{description}</p>
-    <h4>
-      <strong>Built with:</strong>
-      {builtWith}
-    </h4>
     <div>
-      <a href={srcAddress} rel="noopener noreferrer" target="_blank">
-        Source
-      </a>
-      <a href={linkAddress} rel="noopener noreferrer" target="_blank">
-        Open
-      </a>
+      <h3>{projectName}</h3>
+      <p>{description}</p>
+      <h4>
+        <strong>Built with:</strong>
+        {builtWith}
+      </h4>
+      <div>
+        {srcAddress ? (
+          <a
+            className="offsite-link"
+            href={srcAddress}
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Source
+          </a>
+        ) : (
+          <p
+            className="offsite-link"
+            style={{ ...{ backgroundColor: '#D3D3D3' } }}
+          >
+            Private Src
+          </p>
+        )}
+        <a
+          className="offsite-link"
+          href={linkAddress}
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          Open
+        </a>
+      </div>
     </div>
   </div>
 );
